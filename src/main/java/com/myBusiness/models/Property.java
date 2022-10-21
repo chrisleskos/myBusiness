@@ -13,7 +13,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Property {
+abstract public class Property {
     @Id
     @SequenceGenerator(
             name = "property_sequence",
@@ -30,9 +30,9 @@ public class Property {
     )
     private int id;
 
-//    @ManyToOne
-//    @JoinColumn(name = "user_id")
-//    private User user;
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
+    private Owner owner;
 
     private Date from_date;
     private Date to_date;

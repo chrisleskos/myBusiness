@@ -24,7 +24,7 @@ public class Owner {
             generator = "user_sequence"
     )
     @Column(
-            name = "user_id"
+            name = "owner_id"
     )
     private int id;
     private String username;
