@@ -5,10 +5,6 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class Room extends Property {
-    int beds;
-
-    Room() {
-        super();
-    }
+public class RestaurantTable extends Property {
+    int seats;
 }

@@ -28,12 +28,12 @@ public class Property {
     @Column(
             name = "property_id"
     )
-    private Integer id;
+    private int id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
-    private User user;
+//    @ManyToOne
+//    @JoinColumn(name = "user_id")
+//    private User user;
 
-    private Date from;
-    private Date to;
+    private Date from_date;
+    private Date to_date;
 }

@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class User {
+public class Owner {
     @Id
     @SequenceGenerator(
             name = "user_sequence",
@@ -22,6 +22,9 @@ public class User {
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
             generator = "user_sequence"
+    )
+    @Column(
+            name = "user_id"
     )
     private int id;
     private String username;
