@@ -30,6 +30,7 @@ public class Owner {
     private String username;
     private String email;
     private String password;
+    private String phone_number;
     private boolean locked = false;
     private boolean enabled = false;
 }
