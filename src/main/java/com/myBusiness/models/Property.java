@@ -7,6 +7,7 @@ import javax.persistence.Table;
 import java.util.Date;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 @Table
 @Getter
 @Setter
